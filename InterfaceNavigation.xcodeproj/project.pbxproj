@@ -13,6 +13,13 @@
 		4B156FBF1AB13A3A0083A0DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B156FBE1AB13A3A0083A0DF /* Images.xcassets */; };
 		4B156FC21AB13A3A0083A0DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B156FC01AB13A3A0083A0DF /* LaunchScreen.xib */; };
 		4B156FCE1AB13A3A0083A0DF /* InterfaceNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B156FCD1AB13A3A0083A0DF /* InterfaceNavigationTests.swift */; };
+		4B156FE21AB13A430083A0DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B156FE11AB13A430083A0DF /* Images.xcassets */; };
+		4B156FE61AB13A430083A0DF /* InterfaceNavigation WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 4B156FE51AB13A430083A0DF /* InterfaceNavigation WatchKit App.app */; };
+		4B156FEE1AB13A430083A0DF /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B156FEC1AB13A430083A0DF /* Interface.storyboard */; };
+		4B156FF01AB13A430083A0DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B156FEF1AB13A430083A0DF /* Images.xcassets */; };
+		4B156FF31AB13A430083A0DF /* InterfaceNavigation WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4B156FDB1AB13A430083A0DF /* InterfaceNavigation WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4B156FFD1AB13A6B0083A0DF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B156FFB1AB13A6B0083A0DF /* InterfaceController.swift */; };
+		4B156FFE1AB13A6B0083A0DF /* PageTwoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B156FFC1AB13A6B0083A0DF /* PageTwoInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +30,35 @@
 			remoteGlobalIDString = 4B156FB11AB13A3A0083A0DF;
 			remoteInfo = InterfaceNavigation;
 		};
+		4B156FE71AB13A430083A0DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B156FAA1AB13A3A0083A0DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B156FE41AB13A430083A0DF;
+			remoteInfo = "InterfaceNavigation WatchKit App";
+		};
+		4B156FF11AB13A430083A0DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B156FAA1AB13A3A0083A0DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B156FDA1AB13A430083A0DF;
+			remoteInfo = "InterfaceNavigation WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B156FFA1AB13A430083A0DF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4B156FF31AB13A430083A0DF /* InterfaceNavigation WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4B156FB21AB13A3A0083A0DF /* InterfaceNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterfaceNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +71,15 @@
 		4B156FC71AB13A3A0083A0DF /* InterfaceNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterfaceNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B156FCC1AB13A3A0083A0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B156FCD1AB13A3A0083A0DF /* InterfaceNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceNavigationTests.swift; sourceTree = "<group>"; };
+		4B156FDB1AB13A430083A0DF /* InterfaceNavigation WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InterfaceNavigation WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B156FDE1AB13A430083A0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B156FE11AB13A430083A0DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4B156FE51AB13A430083A0DF /* InterfaceNavigation WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InterfaceNavigation WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B156FEB1AB13A430083A0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B156FED1AB13A430083A0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4B156FEF1AB13A430083A0DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4B156FFB1AB13A6B0083A0DF /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4B156FFC1AB13A6B0083A0DF /* PageTwoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTwoInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B156FD81AB13A430083A0DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +112,8 @@
 			children = (
 				4B156FB41AB13A3A0083A0DF /* InterfaceNavigation */,
 				4B156FCA1AB13A3A0083A0DF /* InterfaceNavigationTests */,
+				4B156FDC1AB13A430083A0DF /* InterfaceNavigation WatchKit Extension */,
+				4B156FE91AB13A430083A0DF /* InterfaceNavigation WatchKit App */,
 				4B156FB31AB13A3A0083A0DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +123,8 @@
 			children = (
 				4B156FB21AB13A3A0083A0DF /* InterfaceNavigation.app */,
 				4B156FC71AB13A3A0083A0DF /* InterfaceNavigationTests.xctest */,
+				4B156FDB1AB13A430083A0DF /* InterfaceNavigation WatchKit Extension.appex */,
+				4B156FE51AB13A430083A0DF /* InterfaceNavigation WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +167,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4B156FDC1AB13A430083A0DF /* InterfaceNavigation WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B156FFB1AB13A6B0083A0DF /* InterfaceController.swift */,
+				4B156FFC1AB13A6B0083A0DF /* PageTwoInterfaceController.swift */,
+				4B156FE11AB13A430083A0DF /* Images.xcassets */,
+				4B156FDD1AB13A430083A0DF /* Supporting Files */,
+			);
+			path = "InterfaceNavigation WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		4B156FDD1AB13A430083A0DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B156FDE1AB13A430083A0DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B156FE91AB13A430083A0DF /* InterfaceNavigation WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				4B156FEC1AB13A430083A0DF /* Interface.storyboard */,
+				4B156FEF1AB13A430083A0DF /* Images.xcassets */,
+				4B156FEA1AB13A430083A0DF /* Supporting Files */,
+			);
+			path = "InterfaceNavigation WatchKit App";
+			sourceTree = "<group>";
+		};
+		4B156FEA1AB13A430083A0DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B156FEB1AB13A430083A0DF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +214,12 @@
 				4B156FAE1AB13A3A0083A0DF /* Sources */,
 				4B156FAF1AB13A3A0083A0DF /* Frameworks */,
 				4B156FB01AB13A3A0083A0DF /* Resources */,
+				4B156FFA1AB13A430083A0DF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4B156FF21AB13A430083A0DF /* PBXTargetDependency */,
 			);
 			name = InterfaceNavigation;
 			productName = InterfaceNavigation;
@@ -150,6 +244,39 @@
 			productReference = 4B156FC71AB13A3A0083A0DF /* InterfaceNavigationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4B156FDA1AB13A430083A0DF /* InterfaceNavigation WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B156FF71AB13A430083A0DF /* Build configuration list for PBXNativeTarget "InterfaceNavigation WatchKit Extension" */;
+			buildPhases = (
+				4B156FD71AB13A430083A0DF /* Sources */,
+				4B156FD81AB13A430083A0DF /* Frameworks */,
+				4B156FD91AB13A430083A0DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B156FE81AB13A430083A0DF /* PBXTargetDependency */,
+			);
+			name = "InterfaceNavigation WatchKit Extension";
+			productName = "InterfaceNavigation WatchKit Extension";
+			productReference = 4B156FDB1AB13A430083A0DF /* InterfaceNavigation WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		4B156FE41AB13A430083A0DF /* InterfaceNavigation WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B156FF41AB13A430083A0DF /* Build configuration list for PBXNativeTarget "InterfaceNavigation WatchKit App" */;
+			buildPhases = (
+				4B156FE31AB13A430083A0DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InterfaceNavigation WatchKit App";
+			productName = "InterfaceNavigation WatchKit App";
+			productReference = 4B156FE51AB13A430083A0DF /* InterfaceNavigation WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +292,12 @@
 					4B156FC61AB13A3A0083A0DF = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 4B156FB11AB13A3A0083A0DF;
+					};
+					4B156FDA1AB13A430083A0DF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					4B156FE41AB13A430083A0DF = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -183,6 +316,8 @@
 			targets = (
 				4B156FB11AB13A3A0083A0DF /* InterfaceNavigation */,
 				4B156FC61AB13A3A0083A0DF /* InterfaceNavigationTests */,
+				4B156FDA1AB13A430083A0DF /* InterfaceNavigation WatchKit Extension */,
+				4B156FE41AB13A430083A0DF /* InterfaceNavigation WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +337,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B156FD91AB13A430083A0DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B156FE61AB13A430083A0DF /* InterfaceNavigation WatchKit App.app in Resources */,
+				4B156FE21AB13A430083A0DF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B156FE31AB13A430083A0DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B156FEE1AB13A430083A0DF /* Interface.storyboard in Resources */,
+				4B156FF01AB13A430083A0DF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +378,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B156FD71AB13A430083A0DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B156FFE1AB13A6B0083A0DF /* PageTwoInterfaceController.swift in Sources */,
+				4B156FFD1AB13A6B0083A0DF /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +394,16 @@
 			isa = PBXTargetDependency;
 			target = 4B156FB11AB13A3A0083A0DF /* InterfaceNavigation */;
 			targetProxy = 4B156FC81AB13A3A0083A0DF /* PBXContainerItemProxy */;
+		};
+		4B156FE81AB13A430083A0DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B156FE41AB13A430083A0DF /* InterfaceNavigation WatchKit App */;
+			targetProxy = 4B156FE71AB13A430083A0DF /* PBXContainerItemProxy */;
+		};
+		4B156FF21AB13A430083A0DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B156FDA1AB13A430083A0DF /* InterfaceNavigation WatchKit Extension */;
+			targetProxy = 4B156FF11AB13A430083A0DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +422,14 @@
 				4B156FC11AB13A3A0083A0DF /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		4B156FEC1AB13A430083A0DF /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B156FED1AB13A430083A0DF /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = InterfaceNavigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = InterfaceNavigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +570,63 @@
 			};
 			name = Release;
 		};
+		4B156FF51AB13A430083A0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = InterfaceNavigation_WatchKit_Extension;
+				INFOPLIST_FILE = "InterfaceNavigation WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		4B156FF61AB13A430083A0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = InterfaceNavigation_WatchKit_Extension;
+				INFOPLIST_FILE = "InterfaceNavigation WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		4B156FF81AB13A430083A0DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InterfaceNavigation WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B156FF91AB13A430083A0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "InterfaceNavigation WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -413,6 +652,22 @@
 			buildConfigurations = (
 				4B156FD51AB13A3A0083A0DF /* Debug */,
 				4B156FD61AB13A3A0083A0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B156FF41AB13A430083A0DF /* Build configuration list for PBXNativeTarget "InterfaceNavigation WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B156FF51AB13A430083A0DF /* Debug */,
+				4B156FF61AB13A430083A0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4B156FF71AB13A430083A0DF /* Build configuration list for PBXNativeTarget "InterfaceNavigation WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B156FF81AB13A430083A0DF /* Debug */,
+				4B156FF91AB13A430083A0DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

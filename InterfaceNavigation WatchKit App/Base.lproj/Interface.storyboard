@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14D87h" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Root-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Main" title="Root" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InterfaceNavigation_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="center" text="This is the root interface of a hierarchical interface." textAlignment="left" numberOfLines="0" id="0D7-IT-Hm1">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Present page-based interface" id="Q4G-Fv-ZaX">
+                            <color key="backgroundColor" red="0.0" green="0.052433351939537798" blue="0.81563683712121215" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="presentModalTapped" destination="AgC-eL-Hgc" id="CSU-uY-JtY"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Push Detail Interface" id="pVR-oL-1ho">
+                            <color key="backgroundColor" red="0.66305634469696972" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <segue destination="9Jz-f2-336" kind="push" id="cdd-ev-yLA"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="459.25"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="ow2-wf-YeH">
+            <objects>
+                <controller identifier="Detail" title="Detail" id="9Jz-f2-336">
+                    <items>
+                        <label width="1" height="1" alignment="center" verticalAlignment="center" text="This is the detail interface of a hierarchical interface." textAlignment="center" numberOfLines="0" id="46J-HE-TdJ"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="573" y="460"/>
+        </scene>
+        <!--Page 1-->
+        <scene sceneID="yFi-Qr-m3L">
+            <objects>
+                <controller identifier="ModalA" title="Page 1" id="Wzh-Hn-hdg">
+                    <items>
+                        <label width="1" alignment="center" textAlignment="left" numberOfLines="0" id="soh-eA-Fa9">
+                            <string key="text">This is
+Page One
+of a page-based interface.</string>
+                        </label>
+                    </items>
+                    <connections>
+                        <segue destination="UHj-8V-rd0" kind="relationship" relationship="nextPage" id="faj-We-yad"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="104"/>
+        </scene>
+        <!--Page 2-->
+        <scene sceneID="BTi-2Q-2WX">
+            <objects>
+                <controller identifier="ModalB" title="Page 2" id="UHj-8V-rd0" customClass="PageTwoInterfaceController" customModule="Test_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" textAlignment="left" numberOfLines="0" id="bzV-dr-8FK">
+                            <string key="text">This is
+Page Two
+of a page-based interface.</string>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Present another page-based interface" id="lYD-v1-KZm">
+                            <color key="backgroundColor" red="0.35623816287878785" green="0.35368561958090705" blue="0.12086066163139375" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="presentAnotherPageBasedInterface" destination="UHj-8V-rd0" id="KSL-eQ-sYZ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Present hierarchical interface" id="ev1-Ea-Yxh">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="modal" id="alc-1u-Vyf"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Push an interface into a page-based interface" id="IUO-Qh-Ozm">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <segue destination="9Jz-f2-336" kind="push" id="cBG-rE-mIE"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <segue destination="Pqd-Bz-fag" kind="relationship" relationship="nextPage" id="BMM-Kv-Bh2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="573" y="104"/>
+        </scene>
+        <!--Page 3-->
+        <scene sceneID="LwP-qI-ufK">
+            <objects>
+                <controller identifier="ModalC" title="Page 3" id="Pqd-Bz-fag">
+                    <items>
+                        <label width="1" alignment="center" textAlignment="left" numberOfLines="0" id="zuH-L8-lji">
+                            <string key="text">This is
+Page Three
+of a page-based interface.</string>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="811" y="104"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="cdd-ev-yLA"/>
+    </inferredMetricsTieBreakers>
+</document>
